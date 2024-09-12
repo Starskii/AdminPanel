@@ -1,0 +1,29 @@
+html, body, :root, .primary-container{
+    height: 100%;
+    margin: 0;
+}
+
+#primary-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+}
+
+#header-container{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color: orange;
+}
+
+#sidebar-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: chartreuse;
+}
+
+#content-container{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: burlywood;
+}
