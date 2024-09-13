@@ -8,12 +8,36 @@ html, body, :root, .primary-container{
     grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 1fr 4fr;
     height: 100%;
+
+    gap: 5px;
 }
 
 #header-container{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-color: orange;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 5px;
+}
+
+#hchp1{
+    background-color: red;
+}
+
+#hchp2{
+    background-color: blue;
+}
+
+#hchp3{
+    background-color: green;
+}
+
+#hchp4{
+    background-color: pink;
 }
 
 #sidebar-container{
