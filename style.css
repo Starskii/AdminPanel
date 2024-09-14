@@ -19,7 +19,7 @@ html, body, :root, .primary-container{
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 
     gap: 5px;
 }
@@ -32,12 +32,25 @@ html, body, :root, .primary-container{
     background-color: blue;
 }
 
+#hchp2>img{
+    height: 30px;
+    width: 30px;
+}
+
 #hchp3{
     background-color: green;
 }
 
+#hchp3>img{
+    height: 60px;
+    width: 60px;
+}
+
 #hchp4{
     background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #sidebar-container{
