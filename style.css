@@ -24,21 +24,38 @@ html, body, :root, .primary-container{
     gap: 5px;
 }
 
+.header-partition{
+    padding: 10px;
+}
+
 #hchp1{
     background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 25fr;
+    gap: 10px;
+    align-items: center;
 }
 
 #hchp2{
     background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 #hchp2>img{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 #hchp3{
     background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 25fr;
+    align-items: center;
+    gap: 20px;
 }
 
 #hchp3>img{
@@ -48,8 +65,9 @@ html, body, :root, .primary-container{
 
 #hchp4{
     background-color: pink;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
 }
 
@@ -63,4 +81,10 @@ html, body, :root, .primary-container{
     grid-column: 2 / 4;
     grid-row: 2 / 3;
     background-color: burlywood;
+}
+
+#sidebar-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr 3fr 6fr;
 }
