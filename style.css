@@ -77,14 +77,18 @@ html, body, :root, .primary-container{
     background-color: chartreuse;
 }
 
-#content-container{
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-    background-color: burlywood;
-}
-
 #sidebar-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr 1fr 3fr 6fr;
+}
+
+#left-content-container{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: burlywood;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
 }
