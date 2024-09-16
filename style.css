@@ -109,11 +109,37 @@ html, body, :root, .primary-container{
     grid-template-rows: 1fr 1fr;
 }
 
-.card-container{
+#top-right-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    margin: 10px;
+}
+
+#bottom-right-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    margin: 10px;
+}
+
+.project-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
+}
+
+.announcement-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .content-card{
