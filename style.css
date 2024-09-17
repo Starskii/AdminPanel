@@ -100,7 +100,7 @@ html, body, :root, .primary-container{
     justify-items: center;
     align-items: center;
     gap: 15px;
-    margin: 15px;
+    margin: 30px;
     margin-top: 25px;
     font-weight: bolder;
     font-size: 1.2rem;
@@ -114,7 +114,6 @@ html, body, :root, .primary-container{
 #content-container{
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    background-color: burlywood;
 
     display: grid;
     grid-template-columns: 3fr 2fr;
