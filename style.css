@@ -1,27 +1,37 @@
 html, body, :root, .primary-container{
     height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --Dark-Purple: #27213C;
+    --Caput-Mortuum: #5A352A;
+    --Rufous: #A33B20;
+    --Chamoisee: #A47963;
+    --Sage: #A6A57A;
+
+    color: wheat;
+    font-weight: bold;
 }
 
 #primary-container{
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 6fr 4fr;
+    grid-template-rows: 1fr 6fr;
     height: 100%;
-
-    gap: 5px;
 }
 
 #header-container{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-color: orange;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 
     gap: 5px;
+    background-color: var(--Caput-Mortuum);
 }
 
 .header-partition{
@@ -29,7 +39,6 @@ html, body, :root, .primary-container{
 }
 
 #hchp1{
-    background-color: red;
     display: grid;
     grid-template-columns: 1fr 25fr;
     gap: 10px;
@@ -37,7 +46,6 @@ html, body, :root, .primary-container{
 }
 
 #hchp2{
-    background-color: blue;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr;
@@ -51,7 +59,6 @@ html, body, :root, .primary-container{
 }
 
 #hchp3{
-    background-color: green;
     display: grid;
     grid-template-columns: 1fr 25fr;
     align-items: center;
@@ -64,7 +71,6 @@ html, body, :root, .primary-container{
 }
 
 #hchp4{
-    background-color: pink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -74,13 +80,29 @@ html, body, :root, .primary-container{
 #sidebar-container{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: chartreuse;
-}
 
-#sidebar-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr 1fr 3fr 6fr;
+    background-color: var(--Dark-Purple);
+    color: wheat;
+}
+
+.sidebar-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px;
+    margin-top: 25px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
 }
 
 #content-container{
@@ -91,6 +113,7 @@ html, body, :root, .primary-container{
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
+    background-color: var(--Rufous);
 }
 
 #left-content-container{
@@ -136,6 +159,10 @@ html, body, :root, .primary-container{
     grid-template-rows: repeat(3, 1fr);
 }
 
+.project-card-container>.content-card{
+    
+}
+
 .trending-card-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -143,6 +170,6 @@ html, body, :root, .primary-container{
 }
 
 .content-card{
-    background-color: blueviolet;
+    background-color: var(--Chamoisee);
     overflow: auto;
 }
