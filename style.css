@@ -220,6 +220,35 @@ html, body, :root, .primary-container{
     border-radius: 12px;
 }
 
+.trending-card-container>.content-card{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.trending-card-container>.content-card>img{
+    height: 50px;
+    width: 50px;
+    justify-self: end;
+}
+
+.trending-right{
+    margin: 10px;
+}
+
+.trending-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.trending-description{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 .content-card{
     background-color: var(--Chamoisee);
     overflow: auto;
