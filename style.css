@@ -6,10 +6,12 @@ html, body, :root, .primary-container{
 
 :root{
     --Dark-Purple: #27213C;
+    --Light-Purple: #4d4177;
     --Caput-Mortuum: #5A352A;
-    --Rufous: #A33B20;
-    --Chamoisee: #A47963;
+    --Rufous: #A47963;
+    --Chamoisee: #A33B20;
     --Sage: #A6A57A;
+    --Title-Color: rgb(252, 240, 207);
 
     color: wheat;
     font-weight: bold;
@@ -78,9 +80,20 @@ html, body, :root, .primary-container{
 }
 
 #hchp4>button{
-    border-radius: 12px;
+    border-radius: 20px;
     background-color: var(--Dark-Purple);
+    font-weight: bold;
     color: wheat;
+    padding: 10px;
+    border: none;
+    transition: background 1s, color 1s, border-radius 1s;
+}
+
+#hchp4>button:hover{
+    border-radius: 6px;
+    background-color: var(--Light-Purple);
+    transition: background 1s, color 1s, border-radius 1s;
+    color: white;
 }
 
 #sidebar-container{
@@ -92,6 +105,10 @@ html, body, :root, .primary-container{
     grid-template-rows: 1fr 3fr 1fr 1fr 3fr 6fr;
     background-color: var(--Dark-Purple);
     color: wheat;
+}
+
+.dashboard-group{
+    margin-left: 30px;
 }
 
 .sidebar-header{
@@ -116,7 +133,7 @@ html, body, :root, .primary-container{
     grid-row: 2 / 3;
 
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     background-color: var(--Rufous);
 }
@@ -160,8 +177,25 @@ html, body, :root, .primary-container{
 
 .announcement-card-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
+
+    background-color: var(--Chamoisee);
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.announcement-card-container>.content-card{
+    grid-column: 1 / 4;
+}
+
+.off{ 
+    background-color: var(--Chamoisee);
+}
+
+.on{
+    background-color: var(--Rufous);
 }
 
 .project-card-container>.content-card{
@@ -172,9 +206,37 @@ html, body, :root, .primary-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .content-card{
     background-color: var(--Chamoisee);
     overflow: auto;
+}
+
+.project-card-container>.content-card{
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 5rem 1fr;
+    border-radius: 12px;
+}
+
+.project-card-container>.content-card>.card-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-left: 25px;
+    color: var(--Title-Color);
+}
+
+.project-card-container>.content-card>.card-description{
+    margin-left: 50px;
+    font-weight: normal;
+}
+
+.color-strip{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--Caput-Mortuum);
 }
