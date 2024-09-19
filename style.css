@@ -172,7 +172,7 @@ html, body, :root, .primary-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .announcement-card-container{
@@ -188,6 +188,19 @@ html, body, :root, .primary-container{
 
 .announcement-card-container>.content-card{
     grid-column: 1 / 4;
+    margin: 25px;
+}
+
+.announcement-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.announcement-description{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: none;
 }
 
 .off{ 
@@ -196,10 +209,6 @@ html, body, :root, .primary-container{
 
 .on{
     background-color: var(--Rufous);
-}
-
-.project-card-container>.content-card{
-    
 }
 
 .trending-card-container{
@@ -231,7 +240,7 @@ html, body, :root, .primary-container{
 }
 
 .project-card-container>.content-card>.card-description{
-    margin-left: 50px;
+    margin: 25px;
     font-weight: normal;
 }
 
